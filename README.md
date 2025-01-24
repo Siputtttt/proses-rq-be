@@ -26,7 +26,7 @@ Pastikan Anda telah menginstal atau memiliki:
   `cp .env.example .env`
   atur konfigurasi env nya 
   `DB_CONNECTION=mysql
-  DB_HOST=127.0.0.1
+    DB_HOST=127.0.0.1
   DB_PORT=3306
   DB_DATABASE=nama_database
   DB_USERNAME=root
