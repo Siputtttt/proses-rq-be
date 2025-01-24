@@ -24,10 +24,30 @@ Pastikan Anda telah menginstal atau memiliki:
 
 ## 3. Duplicat file env
   `cp .env.example .env`
-  atur konfigurasi env nya 
-  `DB_CONNECTION=mysql
-    DB_HOST=127.0.0.1
-  DB_PORT=3306
-  DB_DATABASE=nama_database
-  DB_USERNAME=root
-  DB_PASSWORD=your_password`
+  atur konfigurasi env nya ini jika artisan 
+  * DB_CONNECTION=mysql
+  * DB_HOST=127.0.0.1
+  * DB_PORT=3306
+  * DB_DATABASE=nama_database
+  * DB_USERNAME=root
+  * DB_PASSWORD=your_password`
+
+  atur jika docker
+  * DB_CONNECTION=mysql
+  * DB_HOST=db
+  * DB_PORT=3306
+  * DB_DATABASE=laravel
+  * DB_USERNAME=root
+  * DB_PASSWORD=root
+## 4. Mggration database
+    # jika artisan
+    `php artisan migrate`
+    jika docker
+    # `docker-compose up -d`
+
+## 5. ambil data dari api public
+    # jika artisan
+    `php artisan fetch:public-data`
+    # jika docker
+    `docker exec -it backend php artisan fetch:public-data`
+    
