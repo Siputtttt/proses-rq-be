@@ -40,14 +40,18 @@ Pastikan Anda telah menginstal atau memiliki:
   * DB_USERNAME=root
   * DB_PASSWORD=root
 ## 4. Mggration database
+
     # jika artisan
     `php artisan migrate`
+    
     jika docker
     # `docker-compose up -d`
 
 ## 5. ambil data dari api public
+
     # jika artisan
     `php artisan fetch:public-data`
+    
     # jika docker
     `docker exec -it backend php artisan fetch:public-data`
     
